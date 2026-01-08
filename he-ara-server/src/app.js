@@ -18,7 +18,6 @@ app.use(express.static('public'));
 // Parse JSON bodies for incoming requests
 app.use(express.json());
 
-// שימוש בנתיבים שהגדרנו
 app.use('/api', visitRoutes);
 
 // --- Error Handling ---

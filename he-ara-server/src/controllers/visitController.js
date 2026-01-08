@@ -4,6 +4,19 @@ const path = require('path');
 // Path to our data file
 const dataFile = path.join(__dirname, '../../data.json');
 
+/**
+ * Tracks a unique visit to the server.
+ *
+ * This function performs the following steps:
+ * 1. Loads existing visit data from a local JSON file.
+ * 2. Identifies the user's IP address from the request headers or socket.
+ * 3. Checks if the IP address has already been recorded.
+ * 4. If it's a returning user, it logs the re-visit and returns without updating the count.
+ * 5. If it's a new user, it records the IP, timestamp, and user agent, updates the total count, and saves the data back to the file.
+ *
+ * @param {Object} req - The Express request object.
+ * @param {Object} res - The Express response object.
+ */
 exports.trackVisit = (req, res) => {
     let data = { totalUniqueVisits: 0, visitsLog: [] };
 
