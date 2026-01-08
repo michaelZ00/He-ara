@@ -1,5 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
+import trackUserVisit from "./CtaCounter";
+
 
 /**
  * CtaSection Component
@@ -14,7 +16,7 @@ const CtaSection = () => {
     title: "מוכנים לשדרג את הבית",
     highlight: "לסטנדרט טכנולוגי חדש ?",
     buttonText: "הזמינו עכשיו את נורת Sky",
-    buttonLink: "https://he-ara.co.il/%d7%93%d7%99%d7%9e%d7%a8-%d7%90%d7%99%d7%a0%d7%93%d7%a7%d7%a1/",
+    // buttonLink: "https://he-ara.co.il/%d7%93%d7%99%d7%9e%d7%a8-%d7%90%d7%99%d7%a0%d7%93%d7%a7%d7%a1/",
     subText: "והצטרפו לאלפי בתים שכבר מעצבים באור"
   };
 
@@ -43,6 +45,7 @@ const CtaSection = () => {
       
       <a 
         href={content.buttonLink}
+        onClick={trackUserVisit}
         target="_blank" 
         rel="noopener noreferrer"
         className="inline-block bg-yellow-400 hover:bg-yellow-300 text-black text-xl font-bold px-14 py-5 rounded-full transition-all transform hover:scale-105 active:scale-95 shadow-[0_20px_40px_rgba(234,179,8,0.3)] hover:shadow-[0_25px_50px_rgba(234,179,8,0.5)]"
