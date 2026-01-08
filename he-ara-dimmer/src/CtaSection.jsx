@@ -16,7 +16,7 @@ const CtaSection = () => {
     title: "מוכנים לשדרג את הבית",
     highlight: "לסטנדרט טכנולוגי חדש ?",
     buttonText: "הזמינו עכשיו את נורת Sky",
-    // buttonLink: "https://he-ara.co.il/%d7%93%d7%99%d7%9e%d7%a8-%d7%90%d7%99%d7%a0%d7%93%d7%a7%d7%a1/",
+    buttonLink: "https://he-ara.co.il/%d7%93%d7%99%d7%9e%d7%a8-%d7%90%d7%99%d7%a0%d7%93%d7%a7%d7%a1/",
     subText: "והצטרפו לאלפי בתים שכבר מעצבים באור"
   };
 
